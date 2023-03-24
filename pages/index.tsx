@@ -28,7 +28,7 @@ type QueryParametersType = {
   next: string
 };
 
-const demoPartnerId = "f167CmPA";
+const demoPartnerId = "liT2hwPB";
 
 export default function Home() {
   const [mounted, setMounted] = useState<boolean>(false);
@@ -225,12 +225,12 @@ export default function Home() {
               onScroll={handleScroll}
               ref={scrollContainerRef}
             >
-              <p className="text-md font-bold text-gray-700">Configure</p>
+              {/* <p className="text-md font-bold text-gray-700">Configure</p> */}
               <div className="relative flex flex-col px-2 py-8 gap-6 min-w-fit max-w-md">
-                <p className="text-sm font-medium text-gray-900 mt-2">
+                {/* <p className="text-sm font-medium text-gray-900 mt-2">
                   General
-                </p>
-                <Input
+                </p> */}
+                {/* <Input
                   label="Partner ID"
                   value={partnerId}
                   onChange={(e) => setPartnerId(e.target.value)}
@@ -246,16 +246,16 @@ export default function Home() {
                       </Button>
                     ),
                   }}
-                />
-                <Input
+                /> */}
+                {/* <Input
                   label="Button Label"
                   value={label}
                   onChange={(e) => setLabel(e.target.value)}
                   optional
                   placeholder="Create your WhatsApp Business Account"
-                />
+                /> */}
 
-                <label className="inline-flex relative items-center justify-between cursor-pointer mt-2 pr-1">
+                {/* <label className="inline-flex relative items-center justify-between cursor-pointer mt-2 pr-1">
                   <span className="block text-sm font-medium text-gray-500">
                     Show login
                   </span>
@@ -323,9 +323,9 @@ export default function Home() {
                   value={queryParametersState.partnerPayload}
                   onChange={handleQueryParameterChange}
                   optional
-                />
+                /> */}
 
-                {showScrollLabel && (
+                {/* {showScrollLabel && (
                   <div
                     style={{ top: scrollContainerHeight + "px" }}
                     className="absolute z-20 left-1/2 -translate-x-1/2 flex flex-row gap-1 text-white bg-gray-800 rounded rounded-2xl pl-2 pr-4 py-1 text-xs drop-shadow-md whitespace-nowrap"
@@ -344,7 +344,7 @@ export default function Home() {
                     </svg>
                     Scroll to reveal all parameters
                   </div>
-                )}
+                )} */}
                 {/* <div
                   style={{ top: scrollContainerHeight + 115 + "px" }}
                   className="fixed z-10 bg-gradient-to-b from-transparent to-white h-12 w-1/2 max-w-md"
@@ -355,19 +355,19 @@ export default function Home() {
             <div className="flex flex-col grow pr-6 overflow-auto">
               <div className="flex flex-col grow">
                 <p className="text-md font-bold text-gray-700 flex-none">
-                  Preview
+                 Click The Button to Create Your Account
                 </p>
                 <div className="mt-2 p-6 bg-dots rounded-md grow border border-gray-100 relative">
                   <div className="w-full h-full flex flex-col items-center justify-center">
                     {mounted && (
                       <>
                         <ConnectButton
-                          disabled={!partnerId}
-                          partnerId={partnerId}
+                          // disabled={!partnerId}
+                          partnerId={"liT2hwPA"}
                           className="bg-gray-800 text-white hover:bg-gray-900 drop-shadow-xl rounded-md px-4 py-3 outline-none focus:ring focus:ring-gray-900 focus:ring-offset-2 disabled:cursor-not-allowed disabled:bg-gray-300 disabled:text-gray-500"
                           label={
                             label
-                              ? label
+                              ? "Create your WhatsApp Business Account"
                               : "Create your WhatsApp Business Account"
                           }
                           callback={handleCallback}
@@ -396,7 +396,7 @@ export default function Home() {
                         />
                         {!partnerId && (
                           <p className="absolute bottom-2 mt-1 text-xs text-red-600">
-                            Please add a Partner ID to enable button
+                            Please Click on this button to create waba account
                           </p>
                         )}
                       </>
@@ -405,7 +405,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="flex flex-col grow pt-6">
+              {/* <div className="flex flex-col grow pt-6">
                 <div className="flex flex-row items-baseline justify-between w-full pb-2">
                   <p className="text-md font-bold text-gray-700 flex-none">
                     Connect Button Code
@@ -495,10 +495,10 @@ export default function Home() {
                     </Button>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
 
-            <div className="flex flex-col w-1/4 max-w-xl">
+            {/* <div className="flex flex-col w-1/4 max-w-xl">
               <p className="text-md font-bold text-gray-700 flex-none">
                 Console
               </p>
@@ -517,7 +517,7 @@ export default function Home() {
                   `>_`
                 )}
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </main>

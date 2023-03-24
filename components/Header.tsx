@@ -12,7 +12,7 @@ const Header = () => {
             height={40}
           />
           <h1 className="text-xl font-bold text-gray-300 mb-1">
-            Explore Integrated Onboarding
+            Integrated Onboarding - HeyHomie
           </h1>
         </div>
         <a
