@@ -28,7 +28,7 @@ type QueryParametersType = {
   next: string;
 };
 
-const demoPartnerId = "liT2hwPB";
+const demoPartnerId = "lOcHKkPA";
 
 export default function Home() {
   const [mounted, setMounted] = useState<boolean>(false);
@@ -360,7 +360,7 @@ export default function Home() {
                       <>
                         <ConnectButton
                           // disabled={!partnerId}
-                          partnerId={"liT2hwPA"}
+                          partnerId={"lOcHKkPA"}
                           className="bg-gray-800 text-white hover:bg-gray-900 drop-shadow-xl rounded-md px-4 py-3 outline-none focus:ring focus:ring-gray-900 focus:ring-offset-2 disabled:cursor-not-allowed disabled:bg-gray-300 disabled:text-gray-500"
                           label={
                             label
